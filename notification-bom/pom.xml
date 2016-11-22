@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>notification-bom</artifactId>
+  <packaging>pom</packaging>
+
+  <name>API Notification BOM (Bill of Materials)</name>
+  <description>BOM for easy dependency management of Notification API dependencies</description>
+
+  <parent>
+    <groupId>com.wet.api</groupId>
+    <artifactId>common-bom</artifactId>
+    <version>01.00.00.00-SNAPSHOT</version>
+  </parent>
+
+  <properties>
+    <common.bom.version>01.00.00.00-SNAPSHOT</common.bom.version>
+    <notification.version>01.00.00.00-SNAPSHOT</notification.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- West Enterprise Notification Dependencies -->
+      <dependency>
+        <groupId>com.wet.api</groupId>
+        <artifactId>notification-dao</artifactId>
+        <version>${notification.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.wet.api</groupId>
+        <artifactId>notification-model</artifactId>
+        <version>${notification.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <distributionManagement>
+    <repository>
+      <id>wet-framework-releases</id>
+      <name>West Enterprise Technologies Framework Releases</name>
+      <url>http://nexus-westenterprise.rhcloud.com/nexus/content/repositories/wet-framework-releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>wet-framework-snapshots</id>
+      <name>West Enterprise Technologies Framework Snapshots</name>
+      <url>http://nexus-westenterprise.rhcloud.com/nexus/content/repositories/wet-framework-snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+</project>
