@@ -1,0 +1,35 @@
+<dataset>
+  <subscriber
+  	id="1" 
+  	form_id="2" 
+  	email="tester1@email.com" 
+  	active="1" 
+  	confirmed="1" 
+  	create_date="2000-01-02 12:01:01" 
+  	activate_date="2001-01-02 01:01:01" 
+  	deactivate_date="2002-03-18 03:31:01" 
+  	confirm_date="2003-01-03 07:28:14" 
+  	version="2004-04-01 12:59:59"/>
+  <subscriber
+  	id="2" 
+  	form_id="6" 
+  	email="tester4@email.com" 
+  	active="1" 
+  	confirmed="0" 
+  	create_date="2010-05-01 06:27:13" 
+  	activate_date="2010-09-13 12:18:07" 
+  	deactivate_date="2011-03-03 01:11:37" 
+  	confirm_date="2010-11-17 10:08:57" 
+  	version="2012-08-29 02:08:48"/>
+  <subscriber
+  	id="3" 
+  	form_id="15" 
+  	email="tester7@email.com" 
+  	active="0" 
+  	confirmed="1" 
+  	create_date="2012-07-18 05:32:18" 
+  	activate_date="2014-05-01 03:43:03" 
+  	deactivate_date="2014-06-21 10:05:02" 
+  	confirm_date="2014-05-01 03:45:26" 
+  	version="2014-05-01 03:45:27"/>
+</dataset>
