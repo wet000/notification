@@ -178,7 +178,7 @@ public class Subscriber implements DomainEntity
 		StringBuilder sb = new StringBuilder("[");
 		
 		// Id and Form Id
-		sb.append(this.id).append(":").append(formId).append(", ");
+		sb.append(this.id).append(":").append(this.formId).append(", ");
 		
 		// Email
 		sb.append("Email:").append(this.email).append(", ");
