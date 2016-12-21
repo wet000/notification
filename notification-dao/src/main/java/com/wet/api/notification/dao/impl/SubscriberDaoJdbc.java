@@ -8,7 +8,11 @@ import java.sql.Statement;
 import java.sql.Timestamp;
 import java.util.List;
 
+import javax.sql.DataSource;
+
 import org.apache.commons.lang3.NotImplementedException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import com.wet.api.common.dao.impl.AbstractDaoJdbc;
@@ -19,6 +23,10 @@ import com.wet.api.notification.model.Subscriber;
 public class SubscriberDaoJdbc extends AbstractDaoJdbc<Subscriber> implements SubscriberDao 
 {
 	private final static String NOT_IMPLEMENTED_MESSAGE = "This method is currently not implemented";
+	
+	@Autowired
+	@Qualifier("notificationDataSource")
+	protected DataSource dataSource;
 	
 	public SubscriberDaoJdbc() 
 	{

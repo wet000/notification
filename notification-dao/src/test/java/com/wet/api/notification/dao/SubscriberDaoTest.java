@@ -41,7 +41,7 @@ import com.wet.api.notification.model.Subscriber;
 
 @Transactional
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath:/META-INF/spring/spring.xml"})
+@ContextConfiguration(locations = {"classpath:/META-INF/spring/spring-test.xml"})
 public abstract class SubscriberDaoTest
 {	
 	// TODO: This should be put into a test-specific spring configuration or properties file
