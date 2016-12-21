@@ -5,11 +5,11 @@
     	xsi:schemaLocation="http://www.springframework.org/schema/beans
     						http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="mysqlDataSource"
+	<bean id="notificationDataSource"
 		  class="org.apache.commons.dbcp2.BasicDataSource"
 		  p:driverClassName="com.mysql.jdbc.Driver"
 		  p:url="jdbc:mysql://${OPENSHIFT_MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_PORT}/notification"
 		  p:username="${OPENSHIFT_MYSQL_DB_USERNAME}"
 		  p:password="${OPENSHIFT_MYSQL_DB_PASSWORD}"/>
-
+		  
 </beans>
